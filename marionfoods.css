@@ -8,8 +8,7 @@ a {
 }
 body {
     display: none;
-    background-color: rgb(25,25,25);
-    background-image: url("https://image.ibb.co/bGaiPk/backgroundwallpaper.jpg");
+    background-color: white;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -142,7 +141,7 @@ ul {
 .product-showcase {
     margin: 15px 0 !important;
 }
-.product-showcase-image {
+.product-showcase-image-wide {
     height: 350px;
 }
 .social-media {
@@ -206,5 +205,8 @@ ul {
     transform: skew(-30deg);
     z-index: 10003;
     position: fixed;
+}
+.parallelogram-collapsed {
+    opacity: 0.5 !important;
 }
 
