@@ -53,35 +53,21 @@ marionApp.controller('mainCtrl', function mainCtrl($scope) {
         }
     ]
 })
-
-
-
-function buttonScroll() {
-    var y_val = $(window).scrollTop()
-    if (y_val < ($('#popular-heading').offset().top - 155)) {
-        $('#about-btn, #contact-us-btn').removeClass('navig-btns-scrolled')
-        $('#home-btn').addClass('navig-btns-scrolled')
-    } else if (y_val >= ($('#about-heading').offset().top - 180) && y_val < ($('#about-heading').offset().top - 145) ) {
-        $('#home-btn, #contact-us-btn').removeClass('navig-btns-scrolled')
-        $('#about-btn').addClass('navig-btns-scrolled')
-    } else if (y_val > ($('#about-heading').offset().top - 145) ) {
-        $('#home-btn, #about-btn').removeClass('navig-btns-scrolled')
-        $('#contact-us-btn').addClass('navig-btns-scrolled')
-    }
-}
-
 function main() {
     $('body').fadeIn(1000)
-    $('#otap, #rosquillos').animate({'width': '0'}, 0)
-    buttonScroll()
-    $(window).scroll(buttonScroll)
     $(window).on('resize', function() {
         if ($(window).width() <= 768) {
             $('#address').css('display', 'none')
-            $('.navig-btns').addClass('collapsed-li')
+            $('#home-btn, #about-btn').addClass('navig-btns-collapsed')
+            $('#contact-us-btn').addClass('contact-us-btn-collapsed')
+            $('#logo-container').addClass('logo-collapsed')
+            $('ul').addClass('ul-collapsed')
         } else {
             $('#address').css('display', 'inline')
-            $('.navig-btns').removeClass('collapsed-li')
+            $('#home-btn, #about-btn').removeClass('navig-btns-collapsed')
+            $('#contact-us-btn').removeClass('contact-us-btn-collapsed')
+            $('#logo-container').removeClass('logo-collapsed')
+            $('ul').removeClass('ul-collapsed')
         }
     })
     $('.sample-fullscreen button').click(function() {
@@ -98,5 +84,4 @@ function main() {
     })
     
 }
-
 $(document).ready(main)
