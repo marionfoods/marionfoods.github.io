@@ -55,7 +55,22 @@ marionApp.controller('mainCtrl', function mainCtrl($scope) {
 })
 function main() {
     $('body').fadeIn(1000)
-    $(window).on('resize', function() {
+    response()
+    $(window).on('resize',response)
+    $('.sample-fullscreen button').click(function() {
+        $('.sample-fullscreen').fadeOut(500)
+    })
+    $('#contact-us-btn').click(function() {
+        $('html, body').animate({scrollTop: $(document).height()}, 1500)
+    })
+    $('#about-btn').click(function() {
+        $('html, body').animate({scrollTop: ($('#about-heading').offset().top - 150)}, 1500)
+    })
+    $('#home-btn').click(function() {
+        $('html, body').animate({scrollTop: 0}, 1500)
+    })
+}
+function response() {
         if ($(window).width() <= 650) {
             $('#address').css('display', 'none')
             $('#home-btn, #about-btn').addClass('navig-btns-collapsed')
@@ -73,19 +88,5 @@ function main() {
             $('.product-showcase-image').addClass('product-showcase-image-wide')
             $('#parallelogram-rear, #parallelogram-bottom').removeClass('parallelogram-collapsed')
         }
-    })
-    $('.sample-fullscreen button').click(function() {
-        $('.sample-fullscreen').fadeOut(500)
-    })
-    $('#contact-us-btn').click(function() {
-        $('html, body').animate({scrollTop: $(document).height()}, 1500)
-    })
-    $('#about-btn').click(function() {
-        $('html, body').animate({scrollTop: ($('#about-heading').offset().top - 150)}, 1500)
-    })
-    $('#home-btn').click(function() {
-        $('html, body').animate({scrollTop: 0}, 1500)
-    })
-    
-}
+    }
 $(document).ready(main)
