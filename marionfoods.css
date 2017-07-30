@@ -24,14 +24,15 @@ li {
     font-size: 20px;
     display: inline;
 }
-.collapsed-li {
-    display: none !important;
-}
 ul {
     position: fixed;
     right: 3%;
     top: 70px;
     z-index: 10006;
+}
+.ul-collapsed {
+    right: 25px !important;
+    top: 90px !important;
 }
 .contact-details {
     display: inline;
@@ -85,14 +86,25 @@ ul {
     background-color: transparent;
     border-color: transparent;
 }
-#contact-us-btn {
-    width: 140px !important;
+.navig-btns-collapsed {
+    height: 25px !important;
+    background-color: white !important;
+    color: rgb(150,0,0) !important;
+    font-size: 14px;
+    width: 70px;
 }
-.navig-btns-scrolled {
-    background-color: rgba(255,255,255,0.8);
-    color: black;
+#contact-us-btn {
+    width: 140px;
+}
+.contact-us-btn-collapsed {
+    height: 25px !important;
+    background-color: white !important;
+    color: rgb(150,0,0) !important;
+    font-size: 14px;
+    width: 110px !important;
 }
 .navig-btns:hover {
+    border-radius: 2.5px;
     border: 1px solid rgb(150,0,0);
 }
 .popular-products-banner {
@@ -154,6 +166,9 @@ ul {
     left: 30px;
     position: fixed;
     z-index: 10005;
+}
+.logo-collapsed {
+    top: 0 !important;
 }
 #main-window {
     width: 80%;
