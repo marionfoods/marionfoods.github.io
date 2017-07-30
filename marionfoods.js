@@ -62,12 +62,18 @@ function main() {
             $('#contact-us-btn').addClass('contact-us-btn-collapsed')
             $('#logo-container').addClass('logo-collapsed center-block')
             $('ul').addClass('ul-collapsed')
+            $('.product-showcase-image').removeClass('product-showcase-image-wide')
+            $('body').css('background-image', 'none')
+            $('#parallelogram-rear, #parallelogram-bottom').addClass('parallelogram-collapsed')
         } else {
             $('#address').css('display', 'inline')
             $('#home-btn, #about-btn').removeClass('navig-btns-collapsed')
             $('#contact-us-btn').removeClass('contact-us-btn-collapsed')
             $('#logo-container').removeClass('logo-collapsed')
             $('ul').removeClass('ul-collapsed')
+            $('.product-showcase-image').addClass('product-showcase-image-wide')
+            $('body').css('background-image', 'url("https://image.ibb.co/bGaiPk/backgroundwallpaper.jpg")')
+            $('#parallelogram-rear, #parallelogram-bottom').removeClass('parallelogram-collapsed')
         }
     })
     $('.sample-fullscreen button').click(function() {
