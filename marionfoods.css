@@ -1,0 +1,194 @@
+* {
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+}
+a {
+    font-family: Bitter, serif;
+    color: white;
+}
+body {
+    display: none;
+    background-color: rgb(25,25,25);
+    background-image: url("https://image.ibb.co/bGaiPk/backgroundwallpaper.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h2 {
+    font-family: 'Bitter', serif;
+}
+li {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    display: inline;
+}
+.collapsed-li {
+    display: none !important;
+}
+ul {
+    position: fixed;
+    right: 3%;
+    top: 70px;
+    z-index: 10006;
+}
+.contact-details {
+    display: inline;
+}
+.contact-box {
+    height: 90px;
+    background-color: rgba(25,25,25,0.8);
+    border-radius: 5px;
+    padding: 5px;
+}
+.contact-col {
+    padding: 5px;
+}
+#contact-row {
+    padding: 2px;
+    margin: auto;
+}
+.main-details {
+    text-align: center;
+    width: 30px;
+}
+.food-samples {
+    display: inline-block !important;
+    width: 770px;
+}
+.img-fullscreen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto !important;
+    max-height: 90%;
+    max-width: 90%;
+    display: none;
+}
+.lower-main-window {
+    padding: 5px;
+    color: white;
+    width: 80%;
+    background-color: rgba(103,0,0,0.85);
+    margin: auto;
+}
+.navig-btns {
+    width: 90px;
+    height: 30px;
+    padding: 2px;
+    color: white;
+    font-family: Bitter, serif;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-color: transparent;
+}
+#contact-us-btn {
+    width: 140px !important;
+}
+.navig-btns-scrolled {
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+}
+.navig-btns:hover {
+    border: 1px solid rgb(150,0,0);
+}
+.popular-products-banner {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px auto;
+    width: 80%;
+    background-color: white;
+}
+.price-background {
+    text-transform: uppercase;
+    font-family: 'Bitter', serif;
+    font-size: 17px;
+    border: 2px solid white;
+    position: absolute;
+    display: table;
+    background-color: rgb(220,20,60);
+    border-radius: 5px;
+    width: 170px;
+    height: 60px;
+    bottom: 40px;
+    left: calc(50% - 85px);
+}
+.price-background p {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.product-heading {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Bitter', serif;
+    color: white;
+}
+.product-showcase {
+    margin: 15px 0 !important;
+}
+.product-showcase-image {
+    height: 350px;
+}
+.social-media {
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 15px !important;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.social-media:hover {
+    border: 2px solid white;
+    background-color: white;
+    color: rgb(130,0,0)
+}
+#logo {
+    width: 300px;
+}
+#logo-container {
+    top: 20px;
+    left: 30px;
+    position: fixed;
+    z-index: 10005;
+}
+#main-window {
+    width: 80%;
+    margin: auto !important;
+    margin-top: 125px !important;
+    background-color: rgba(25,25,25,0.8)
+}
+.container-fluid {
+    padding: 0;
+}
+#navigator-bar {
+    position: fixed;
+    background-color: rgba(255,255,255,0.75);
+    height: 120px;
+    width: 100%;
+    z-index: 10000;
+}
+#parallelogram-bottom {
+    position: fixed;
+    background-color: rgba(103,0,0,0.75);
+    height: 95px;
+    width: 50%;
+    right: 2%;
+    transform: skew(-30deg);
+    top: 20px;
+    z-index: 10002;
+}
+#parallelogram-rear {
+    background-color: rgba(25,25,25,0.75);
+    height: 60px;
+    width: 70%;
+    right: 2%;
+    top: 50px;
+    transform: skew(-30deg);
+    z-index: 10003;
+    position: fixed;
+}
+

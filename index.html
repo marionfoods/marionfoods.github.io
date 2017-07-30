@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+                integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="marionfoods.css" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/8a3f06660a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="marionfoods.js"></script>
+    <title>Marion Foods</title>
+</head>
+<body ng-app="marionApp" ng-controller="mainCtrl">
+    <div class="container-fluid">
+    <div class="container-fluid" id="navigation">
+    <div id="logo-container"><img src="https://image.ibb.co/jm1qn5/newlogo.png" id="logo"></div>
+    <div class="container" id="navigator-bar">
+    </div>
+    <ul>
+        <li><button class="navig-btns" id="home-btn">Home</button></li>
+        <li><button class="navig-btns" id="about-btn">About</button></li>
+        <li><button class="navig-btns" id="contact-us-btn">Contact Us</button></li>
+    </ul>
+    
+    <div id="parallelogram-rear"></div>
+    <div id="parallelogram-bottom"></div>
+    </div>
+    <div id="main-window">
+        <div class="text-center home-window" id="slides_control">
+            <div id="img-container">
+                <carousel interval="setInterval">
+                    <slide ng-repeat="slide in slides" active="slide.active">
+                        <img class="food-samples" ng-src={{slide.image}}>
+                    </slide>
+                </carousel>
+            </div>
+        </div>
+    </div>
+    <div class="popular-products-banner">
+        <h2 id="popular-heading">Popular Products</h2>
+    </div>
+    <div class="lower-main-window">
+        <div class="row">
+        <div class="col-md-4 product-showcase text-center" ng-repeat="product in popularProducts">
+            <img class="product-showcase-image" ng-src={{product.image}} alt="image of the product">
+            <div class="price-background"><p>Available sizes: {{product.avail}}</p></div>
+            <h3 class="product-heading">{{product.name}}</h3>
+        </div>
+        </div>   
+    </div>
+    </div>
+    <div class="popular-products-banner">
+        <h2 id="about-heading">ABOUT</h2>
+    </div>
+    <div class="lower-main-window">
+        <p>Marion Foods and General Merchandise started on early 2011 and is a family-owned business that produces Filipinos' favorite delicacies which are both fresh and of
+            the highest quality.</p>
+    </div>
+    <div class="popular-products-banner">
+        <h2>CONTACT US</h2>
+    </div>
+    <div class="container lower-main-window">
+        <div class="row" id="contact-row">
+            <div class="col-xs-8 col-md-11 contact-col">
+                <div class="contact-box">
+                <i class="fa fa-phone main-details" aria-hidden="true"></i><p class="contact-details">479 9398</p><br>
+                <i class="fa fa-mobile main-details" aria-hidden="true"></i><p class="contact-details">+63 918 908 7305</p><br>
+                <i class="fa fa-envelope-o main-details" aria-hidden="true"></i><p class="contact-details" id="email">efigenianicer@yahoo.com</p><br>
+                <div id="address"><i class="fa fa-address-card-o main-details" aria-hidden="true"></i><p class="contact-details">{{address}}</p></div>
+                </div>
+            </div>
+            <div class="col-xs-4 col-md-1 contact-col">
+                <div class="contact-box text-center">
+                    <a href="https://www.facebook.com/profile.php?id=100006588585000" target="_blank"><button class="social-media"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
