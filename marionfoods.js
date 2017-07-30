@@ -56,11 +56,11 @@ marionApp.controller('mainCtrl', function mainCtrl($scope) {
 function main() {
     $('body').fadeIn(1000)
     $(window).on('resize', function() {
-        if ($(window).width() <= 768) {
+        if ($(window).width() <= 650) {
             $('#address').css('display', 'none')
             $('#home-btn, #about-btn').addClass('navig-btns-collapsed')
             $('#contact-us-btn').addClass('contact-us-btn-collapsed')
-            $('#logo-container').addClass('logo-collapsed')
+            $('#logo-container').addClass('logo-collapsed center-block')
             $('ul').addClass('ul-collapsed')
         } else {
             $('#address').css('display', 'inline')
