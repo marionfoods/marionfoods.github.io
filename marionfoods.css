@@ -31,7 +31,7 @@ ul {
     z-index: 10006;
 }
 .ul-collapsed {
-    right: 25px !important;
+    right: calc(50% - 120px) !important;
     top: 90px !important;
 }
 .contact-details {
@@ -91,7 +91,7 @@ ul {
     background-color: white !important;
     color: rgb(150,0,0) !important;
     font-size: 14px;
-    width: 70px;
+    width: 55px;
 }
 #contact-us-btn {
     width: 140px;
@@ -101,7 +101,7 @@ ul {
     background-color: white !important;
     color: rgb(150,0,0) !important;
     font-size: 14px;
-    width: 110px !important;
+    width: 100px !important;
 }
 .navig-btns:hover {
     border-radius: 2.5px;
@@ -169,6 +169,7 @@ ul {
 }
 .logo-collapsed {
     top: 0 !important;
+    left: calc(50% - 150px) !important;
 }
 #main-window {
     width: 80%;
