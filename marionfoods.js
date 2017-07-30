@@ -63,7 +63,6 @@ function main() {
             $('#logo-container').addClass('logo-collapsed center-block')
             $('ul').addClass('ul-collapsed')
             $('.product-showcase-image').removeClass('product-showcase-image-wide')
-            $('body').css('background-image', 'none')
             $('#parallelogram-rear, #parallelogram-bottom').addClass('parallelogram-collapsed')
         } else {
             $('#address').css('display', 'inline')
@@ -72,7 +71,6 @@ function main() {
             $('#logo-container').removeClass('logo-collapsed')
             $('ul').removeClass('ul-collapsed')
             $('.product-showcase-image').addClass('product-showcase-image-wide')
-            $('body').css('background-image', 'url("https://image.ibb.co/bGaiPk/backgroundwallpaper.jpg")')
             $('#parallelogram-rear, #parallelogram-bottom').removeClass('parallelogram-collapsed')
         }
     })
