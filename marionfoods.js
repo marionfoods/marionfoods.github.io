@@ -89,9 +89,6 @@ function main() {
     $('body').fadeIn(1000)
     response()
     $(window).on('resize',response)
-    $('.sample-fullscreen button').click(function() {
-        $('.sample-fullscreen').fadeOut(500)
-    })
     $('#contact-us-btn').click(function() {
         $('html, body').animate({scrollTop: $(document).height()}, 1500)
     })
@@ -103,6 +100,7 @@ function main() {
     })
 }
 function response() {
+    /* Re-arrange layout of navigation bar when viewed in smaller screen size */
     if ($(window).width() <= 650) {
         $('#address').css('display', 'none')
         $('#home-btn, #about-btn').addClass('navig-btns-collapsed')
