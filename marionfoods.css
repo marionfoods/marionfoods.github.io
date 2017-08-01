@@ -14,9 +14,32 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+/* Windows and Headings */
 h2 {
     font-family: 'Bitter', serif;
 }
+#main-window {
+    width: 80%;
+    margin: auto !important;
+    margin-top: 125px !important;
+    background-color: rgba(25,25,25,0.8)
+}
+.window-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px auto;
+    width: 80%;
+    background-color: white;
+}
+.lower-main-window {
+    padding: 5px;
+    color: white;
+    width: 80%;
+    background-color: rgba(103,0,0,0.85);
+    margin: auto;
+}
+
+/* Navigation Bar Styling */
 li {
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
@@ -29,52 +52,6 @@ ul {
     top: 70px;
     z-index: 10006;
 }
-.ul-collapsed {
-    right: calc(50% - 120px) !important;
-    top: 90px !important;
-}
-.contact-details {
-    display: inline;
-}
-.contact-box {
-    height: 90px;
-    background-color: rgba(25,25,25,0.8);
-    border-radius: 5px;
-    padding: 5px;
-}
-.contact-col {
-    padding: 5px;
-}
-#contact-row {
-    padding: 2px;
-    margin: auto;
-}
-.main-details {
-    text-align: center;
-    width: 30px;
-}
-.food-samples {
-    display: inline-block !important;
-    width: 770px;
-}
-.img-fullscreen {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto !important;
-    max-height: 90%;
-    max-width: 90%;
-    display: none;
-}
-.lower-main-window {
-    padding: 5px;
-    color: white;
-    width: 80%;
-    background-color: rgba(103,0,0,0.85);
-    margin: auto;
-}
 .navig-btns {
     width: 90px;
     height: 30px;
@@ -85,77 +62,9 @@ ul {
     background-color: transparent;
     border-color: transparent;
 }
-.navig-btns-collapsed {
-    height: 25px !important;
-    background-color: white !important;
-    color: rgb(150,0,0) !important;
-    font-size: 14px;
-    width: 55px;
-}
-#contact-us-btn {
-    width: 140px;
-}
-.contact-us-btn-collapsed {
-    height: 25px !important;
-    background-color: white !important;
-    color: rgb(150,0,0) !important;
-    font-size: 14px;
-    width: 100px !important;
-}
 .navig-btns:hover {
     border-radius: 2.5px;
     border: 1px solid rgb(150,0,0);
-}
-.popular-products-banner {
-    text-transform: uppercase;
-    text-align: center;
-    margin: 10px auto;
-    width: 80%;
-    background-color: white;
-}
-.price-background {
-    text-transform: uppercase;
-    font-family: 'Bitter', serif;
-    font-size: 17px;
-    border: 2px solid white;
-    position: absolute;
-    display: table;
-    background-color: rgb(220,20,60);
-    border-radius: 5px;
-    width: 170px;
-    height: 60px;
-    bottom: 40px;
-    left: calc(50% - 85px);
-}
-.price-background p {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-.product-heading {
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-family: 'Bitter', serif;
-    color: white;
-}
-.product-showcase {
-    margin: 15px 0 !important;
-}
-.product-showcase-image-wide {
-    height: 350px;
-}
-.social-media {
-    background-color: transparent;
-    border: 2px solid white;
-    margin-top: 15px !important;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-.social-media:hover {
-    border: 2px solid white;
-    background-color: white;
-    color: rgb(130,0,0)
 }
 #logo {
     width: 300px;
@@ -165,19 +74,6 @@ ul {
     left: 30px;
     position: fixed;
     z-index: 10005;
-}
-.logo-collapsed {
-    top: 0 !important;
-    left: calc(50% - 150px) !important;
-}
-#main-window {
-    width: 80%;
-    margin: auto !important;
-    margin-top: 125px !important;
-    background-color: rgba(25,25,25,0.8)
-}
-.container-fluid {
-    padding: 0;
 }
 #navigator-bar {
     position: fixed;
@@ -206,7 +102,103 @@ ul {
     z-index: 10003;
     position: fixed;
 }
+/* Main Display Content */
+.food-samples {
+    display: inline-block !important;
+    width: 770px;
+}
+/* Products Display Content */
+.price-background {
+    text-transform: uppercase;
+    font-family: 'Bitter', serif;
+    font-size: 17px;
+    border: 2px solid white;
+    position: absolute;
+    display: table;
+    background-color: rgb(220,20,60);
+    border-radius: 5px;
+    width: 170px;
+    height: 60px;
+    bottom: 40px;
+    left: calc(50% - 85px);
+}
+.price-background p {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.product-heading {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Bitter', serif;
+    color: white;
+}
+.product-showcase {
+    margin: 15px 0 !important;
+}
+/* Contact Us Content */
+.contact-box {
+    height: 90px;
+    background-color: rgba(25,25,25,0.8);
+    border-radius: 5px;
+    padding: 5px;
+}
+.contact-col {
+    padding: 5px;
+}
+.contact-details {
+    display: inline;
+}
+#contact-row {
+    padding: 2px;
+    margin: auto;
+}
+#contact-us-btn {
+    width: 140px;
+}
+.main-details {
+    text-align: center;
+    width: 30px;
+}
+.social-media {
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 15px !important;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.social-media:hover {
+    border: 2px solid white;
+    background-color: white;
+    color: rgb(130,0,0)
+}
+/* Responsive */
+.contact-us-btn-collapsed {
+    height: 25px !important;
+    background-color: white !important;
+    color: rgb(150,0,0) !important;
+    font-size: 14px;
+    width: 100px !important;
+}
+.logo-collapsed {
+    top: 0 !important;
+    left: calc(50% - 150px) !important;
+}
+.navig-btns-collapsed {
+    height: 25px !important;
+    background-color: white !important;
+    color: rgb(150,0,0) !important;
+    font-size: 14px;
+    width: 55px;
+}
 .parallelogram-collapsed {
     opacity: 0.5 !important;
 }
-
+.product-showcase-image-wide {
+    height: 350px;
+}
+.ul-collapsed {
+    right: calc(50% - 120px) !important;
+    top: 90px !important;
+}
