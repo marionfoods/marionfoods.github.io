@@ -14,6 +14,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
 /* Windows and Headings */
 h2 {
     font-family: 'Bitter', serif;
@@ -102,20 +103,23 @@ ul {
     z-index: 10003;
     position: fixed;
 }
+
 /* Main Display Content */
 .food-samples {
     display: inline-block !important;
     width: 770px;
 }
+
 /* Products Display Content */
 .price-background {
     text-transform: uppercase;
     font-family: 'Bitter', serif;
+    color: rgb(103,0,0);
     font-size: 17px;
-    border: 2px solid white;
+    border: 2px solid rgb(103,0,0);
     position: absolute;
     display: table;
-    background-color: rgb(220,20,60);
+    background-color: white;
     border-radius: 5px;
     width: 170px;
     height: 60px;
@@ -136,6 +140,7 @@ ul {
 .product-showcase {
     margin: 15px 0 !important;
 }
+
 /* Contact Us Content */
 .contact-box {
     height: 90px;
@@ -173,7 +178,8 @@ ul {
     background-color: white;
     color: rgb(130,0,0)
 }
-/* Responsive */
+
+/* Collapsibles */
 .contact-us-btn-collapsed {
     height: 25px !important;
     background-color: white !important;

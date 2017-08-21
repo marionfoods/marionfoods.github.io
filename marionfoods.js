@@ -25,46 +25,61 @@ app.directive('carouselShowcase', function() {
         controllerAs: 'carousel'
     }
 })
+
+class Product {
+    constructor(name, image, availability) {
+        this.name = name
+        this.image = image
+        this.availability = availability
+    }
+}
+
 app.directive('productsShowcase', function() {
     return {
         restrict: "E",
         templateUrl: 'products-showcase.html',
         controller: function() {
             this.samples = [
-                {
-                    name: "Otap",
-                    image: "https://image.ibb.co/eHHV4k/packedotap.jpg",
-                    avail: "200g \u2022 100g"
-                }, {
-                    name: "Rosquillos",
-                    image: "https://image.ibb.co/deDEVQ/packedrosq.jpg",
-                    avail: "200g \u2022 100g"
-                }, {
-                    name: "Salvaro",
-                    image: "https://image.ibb.co/bZwZVQ/packedsalvaro.jpg",
-                    avail: "130g"
-                }, {
-                    name: "Hojaldres",
-                    image: "https://image.ibb.co/e8BCH5/packedhojaldres.jpg",
-                    avail: "200g"
-                }, 
-                {
-                    name: "Sesame Cookies",
-                    image: "https://image.ibb.co/ebw1AQ/packedsesamecookies.jpg",
-                    avail: "200g \u2022 100g"
-                }, {
-                    name: "Galletas",
-                    image: "https://image.ibb.co/d9wex5/packedgalletas.jpg",
-                    avail: "200g \u2022 100g"
-                }, {
-                    name: "Patatas",
-                    image: "https://image.ibb.co/m50TqQ/packedpatatas.jpg",
-                    avail: "200g \u2022 100g"
-                }, {
-                    name: "Rolling Bayan",
-                    image: "https://image.ibb.co/gotgAQ/packedrollingbayan.jpg",
-                    avail: "100g"
-                }
+                new Product(
+                    "Otap",
+                    "https://image.ibb.co/eHHV4k/packedotap.jpg",
+                    "200g \u2022 100g"
+                ),
+                new Product(
+                    "Rosquillos",
+                    "https://image.ibb.co/deDEVQ/packedrosq.jpg",
+                    "200g \u2022 100g"
+                ),
+                new Product(
+                    "Salvaro",
+                    "https://image.ibb.co/bZwZVQ/packedsalvaro.jpg",
+                    "130g"
+                ),
+                new Product(
+                    "Hojaldres",
+                    "https://image.ibb.co/e8BCH5/packedhojaldres.jpg",
+                    "200g"
+                ),
+                new Product(
+                    "Sesame Cookies",
+                    "https://image.ibb.co/ebw1AQ/packedsesamecookies.jpg",
+                    "200g \u2022 100g"
+                ),
+                new Product(
+                    "Galletas",
+                    "https://image.ibb.co/d9wex5/packedgalletas.jpg",
+                    "200g \u2022 100g"
+                ),
+                new Product(
+                    "Patatas",
+                    "https://image.ibb.co/m50TqQ/packedpatatas.jpg",
+                    "200g \u2022 100g"
+                ),
+                new Product(
+                    "Rolling Bayan",
+                    "https://image.ibb.co/gotgAQ/packedrollingbayan.jpg",
+                    "100g"
+                )
             ]
         },
         controllerAs: 'products'
