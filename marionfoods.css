@@ -140,6 +140,11 @@ ul {
 .product-showcase {
     margin: 15px 0 !important;
 }
+.product-showcase-image {
+    width: 275px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
 
 /* Contact Us Content */
 .contact-box {

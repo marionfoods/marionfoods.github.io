@@ -26,6 +26,7 @@ app.directive('carouselShowcase', function() {
     }
 })
 
+/* Product class for each product in showcase */
 class Product {
     constructor(name, image, availability) {
         this.name = name
@@ -90,7 +91,6 @@ app.directive('contactDetails', function() {
         restrict: 'E',
         templateUrl: 'contact-details.html',
         controller: function() {
-            this.landline = "479 9398"
             this.mobile = "+63 918 908 7305"
             this.email = "efigenianicer@yahoo.com"
             this.address = "36B JADE STREET EXTENSION BUENA HILLS GUADALUPE CEBU CITY CEBU PHILIPPINES 6000"
