@@ -1,215 +1,219 @@
 * {
-    /* border: 1px solid black; */
-    box-sizing: border-box;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
 }
 a {
-    font-family: Bitter, serif;
-    color: white;
+  font-family: Bitter, serif;
+  color: white;
 }
 body {
-    display: none;
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+  display: none;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Windows and Headings */
 h2 {
-    font-family: 'Bitter', serif;
+  font-family: 'Bitter', serif;
 }
 #main-window {
-    width: 80%;
-    margin: auto !important;
-    margin-top: 125px !important;
-    background-color: rgba(25,25,25,0.8)
+  width: 80%;
+  margin: auto !important;
+  margin-top: 125px !important;
+  background-color: rgba(25,25,25,0.8)
 }
 .window-title {
-    text-transform: uppercase;
-    text-align: center;
-    margin: 10px auto;
-    width: 80%;
-    background-color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px auto;
+  width: 80%;
+  background-color: white;
 }
 .lower-main-window {
-    padding: 5px;
-    color: white;
-    width: 80%;
-    background-color: rgba(103,0,0,0.85);
-    margin: auto;
+  padding: 5px;
+  color: white;
+  width: 80%;
+  background-color: rgba(103,0,0,0.85);
+  margin: auto;
 }
 
 /* Navigation Bar Styling */
 li {
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    display: inline;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  display: inline;
 }
 ul {
-    position: fixed;
-    right: 3%;
-    top: 70px;
-    z-index: 10006;
+  position: fixed;
+  right: 3%;
+  top: 70px;
+  z-index: 10006;
 }
 .navig-btns {
-    width: 90px;
-    height: 30px;
-    padding: 2px;
-    color: white;
-    font-family: Bitter, serif;
-    text-transform: uppercase;
-    background-color: transparent;
-    border-color: transparent;
+  width: 90px;
+  height: 30px;
+  padding: 2px;
+  color: white;
+  font-family: Bitter, serif;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-color: transparent;
 }
 .navig-btns:hover {
-    border-radius: 2.5px;
-    border: 1px solid rgb(150,0,0);
+  vertical-align: middle;
+  background-color: white;
+  color: rgb(103,0,0);
+  border: 1px solid rgb(150,0,0);
 }
 #logo {
-    width: 300px;
+  width: 300px;
 }
 #logo-container {
-    top: 20px;
-    left: 30px;
-    position: fixed;
-    z-index: 10005;
+  top: 20px;
+  left: 30px;
+  position: fixed;
+  z-index: 10005;
 }
 #navigator-bar {
-    position: fixed;
-    background-color: rgba(255,255,255,0.75);
-    height: 120px;
-    width: 100%;
-    z-index: 10000;
+  position: fixed;
+  background-color: rgba(255,255,255,0.75);
+  height: 120px;
+  width: 100%;
+  z-index: 10000;
 }
 #parallelogram-bottom {
-    position: fixed;
-    background-color: rgba(103,0,0,0.75);
-    height: 95px;
-    width: 50%;
-    right: 2%;
-    transform: skew(-30deg);
-    top: 20px;
-    z-index: 10002;
+  position: fixed;
+  background-color: rgba(103,0,0,0.75);
+  height: 80px;
+  width: 50%;
+  right: 3%;
+  transform: skew(-30deg);
+  top: 35px;
+  z-index: 10002;
 }
 #parallelogram-rear {
-    background-color: rgba(25,25,25,0.75);
-    height: 60px;
-    width: 70%;
-    right: 2%;
-    top: 50px;
-    transform: skew(-30deg);
-    z-index: 10003;
-    position: fixed;
+  background-color: rgba(25,25,25,0.75);
+  height: 60px;
+  width: 70%;
+  right: 2%;
+  top: 50px;
+  transform: skew(-30deg);
+  z-index: 10003;
+  position: fixed;
 }
 
 /* Main Display Content */
 .food-samples {
-    display: inline-block !important;
-    width: 770px;
+  display: inline-block !important;
+  width: 770px;
 }
 
 /* Products Display Content */
 .price-background {
-    text-transform: uppercase;
-    font-family: 'Bitter', serif;
-    color: rgb(103,0,0);
-    font-size: 17px;
-    border: 2px solid rgb(103,0,0);
-    position: absolute;
-    display: table;
-    background-color: white;
-    border-radius: 5px;
-    width: 170px;
-    height: 60px;
-    bottom: 40px;
-    left: calc(50% - 85px);
+  text-transform: uppercase;
+  font-family: 'Bitter', serif;
+  color: rgb(103,0,0);
+  font-size: 17px;
+  border: 2px solid rgb(103,0,0);
+  position: absolute;
+  display: table;
+  background-color: white;
+  border-radius: 5px;
+  width: 170px;
+  height: 60px;
+  bottom: 40px;
+  left: calc(50% - 85px);
 }
 .price-background p {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 .product-heading {
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-family: 'Bitter', serif;
-    color: white;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-family: 'Bitter', serif;
+  color: white;
 }
 .product-showcase {
-    margin: 15px 0 !important;
+  margin: 15px 0 !important;
 }
 .product-showcase-image {
-    width: 275px;
-    border: 2px solid white;
-    border-radius: 5px;
+  width: 275px;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
 /* Contact Us Content */
 .contact-box {
-    height: 90px;
-    background-color: rgba(25,25,25,0.8);
-    border-radius: 5px;
-    padding: 5px;
+  height: 90px;
+  background-color: rgba(25,25,25,0.8);
+  border-radius: 5px;
+  padding: 5px;
 }
 .contact-col {
-    padding: 5px;
+  padding: 5px;
 }
 .contact-details {
-    display: inline;
+  display: inline;
 }
 #contact-row {
-    padding: 2px;
-    margin: auto;
+  padding: 2px;
+  margin: auto;
 }
 #contact-us-btn {
-    width: 140px;
+  width: 140px;
 }
 .main-details {
-    text-align: center;
-    width: 30px;
+  text-align: center;
+  width: 30px;
 }
 .social-media {
-    background-color: transparent;
-    border: 2px solid white;
-    margin-top: 15px !important;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid white;
+  margin-top: 15px !important;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
 .social-media:hover {
-    border: 2px solid white;
-    background-color: white;
-    color: rgb(130,0,0)
+  border: 2px solid white;
+  background-color: white;
+  color: rgb(130,0,0)
 }
 
 /* Collapsibles */
 .contact-us-btn-collapsed {
-    height: 25px !important;
-    background-color: white !important;
-    color: rgb(150,0,0) !important;
-    font-size: 14px;
-    width: 100px !important;
+  border-radius: 5px !important;
+  height: 25px !important;
+  background-color: white !important;
+  color: rgb(150,0,0) !important;
+  font-size: 14px;
+  width: 100px !important;
 }
 .logo-collapsed {
-    top: 0 !important;
-    left: calc(50% - 150px) !important;
+  top: 0 !important;
+  left: calc(50% - 150px) !important;
 }
 .navig-btns-collapsed {
-    height: 25px !important;
-    background-color: white !important;
-    color: rgb(150,0,0) !important;
-    font-size: 14px;
-    width: 55px;
+  height: 25px !important;
+  background-color: white !important;
+  color: rgb(150,0,0) !important;
+  font-size: 14px;
+  width: 55px;
 }
 .parallelogram-collapsed {
-    opacity: 0.5 !important;
+  opacity: 0.5 !important;
 }
 .product-showcase-image-wide {
-    height: 350px;
+  height: 350px;
 }
 .ul-collapsed {
-    right: calc(50% - 120px) !important;
-    top: 90px !important;
+  right: calc(50% - 120px) !important;
+  top: 90px !important;
 }
