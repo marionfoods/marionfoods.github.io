@@ -1,10 +1,9 @@
-
 <div class="text-center home-window" id="slides_control">
-<div id="img-container">
+  <div id="img-container">
     <carousel interval="carousel.setInterval">
-    <slide ng-repeat="slide in carousel.slides" active="slide.active">
-    <img class="food-samples" ng-src={{slide.image}}>
-    </slide>
+      <slide ng-repeat="slide in carousel.slides" active="slide.active">
+        <img class="food-samples" ng-src={{slide.image}}>
+      </slide>
     </carousel>
-</div>
+  </div>
 </div>
